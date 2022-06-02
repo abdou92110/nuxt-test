@@ -115,9 +115,11 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /pages/fun.vue?macro=true ($id_312a9ebc)
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/fun.vue ($id_402fd3cd)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
+// - /pages/register.vue ($id_a0bf5dce)
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
 // - /@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/imports.mjs ($id_3045fa2c)
@@ -2688,9 +2690,11 @@ Object.defineProperty(__vite_ssr_exports__, "_wrapIf", { enumerable: true, confi
 // - /pages/fun.vue?macro=true ($id_312a9ebc)
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/fun.vue ($id_402fd3cd)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
+// - /pages/register.vue ($id_a0bf5dce)
 // --------------------
 const $id_d1f819f2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/fun.vue?macro=true");
@@ -2698,6 +2702,8 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/pages/fun.vue?macro=tr
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/pages/index.vue?macro=true");
 
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/pages/login.vue?macro=true");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/pages/register.vue?macro=true");
 
 __vite_ssr_exports__.default = [
   {
@@ -2726,6 +2732,15 @@ __vite_ssr_exports__.default = [
     meta: __vite_ssr_import_2__.meta,
     alias: __vite_ssr_import_2__.meta?.alias || [],
     component: () => __vite_ssr_dynamic_import__('/pages/login.vue')
+  },
+  {
+    name: "register",
+    path: "/register",
+    file: "C:/Users/abdou/test-auth/pages/register.vue",
+    children: [],
+    meta: __vite_ssr_import_3__.meta,
+    alias: __vite_ssr_import_3__.meta?.alias || [],
+    component: () => __vite_ssr_dynamic_import__('/pages/register.vue')
   }
 ];
 }
@@ -2772,9 +2787,11 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /pages/fun.vue?macro=true ($id_312a9ebc)
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/fun.vue ($id_402fd3cd)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
+// - /pages/register.vue ($id_a0bf5dce)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
@@ -2804,9 +2821,11 @@ import("file:///C:/Users/abdou/test-auth/node_modules/vue/server-renderer/index.
 // - /pages/fun.vue?macro=true ($id_312a9ebc)
 // - /pages/index.vue?macro=true ($id_5dd70240)
 // - /pages/login.vue?macro=true ($id_213baa8a)
+// - /pages/register.vue?macro=true ($id_222c4ecc)
 // - /pages/fun.vue ($id_402fd3cd)
 // - /pages/index.vue ($id_cca58e97)
 // - /pages/login.vue ($id_b0922173)
+// - /pages/register.vue ($id_a0bf5dce)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
@@ -2881,7 +2900,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></body>`)
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="/fun">Mot de passe oublier</a></div></body>`)
 }
 
 
@@ -2896,6 +2915,41 @@ _sfc_main.setup = (props, ctx) => {
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
 __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]])
+const meta = undefined
+Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /pages/register.vue?macro=true
+// Parents: 
+// - /@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/routes.mjs ($id_d1f819f2)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_222c4ecc = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/register" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="username">Username</label><input type="text" id="username" name="username" placeholder="username"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><div><label for="bio">Bio</label><input type="text" id="bio" name="bio" placeholder="bio"></div><button type="submit">Envoyer</button></form></body>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/register.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/register.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -2984,7 +3038,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></body>`)
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="/fun">Mot de passe oublier</a></div></body>`)
 }
 
 
@@ -2999,6 +3053,39 @@ _sfc_main.setup = (props, ctx) => {
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
 __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]]);
+}
+
+
+// --------------------
+// Request: /pages/register.vue
+// Parents: 
+// - /@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/routes.mjs ($id_d1f819f2)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_a0bf5dce = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/register" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="username">Username</label><input type="text" id="username" name="username" placeholder="username"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><div><label for="bio">Bio</label><input type="text" id="bio" name="bio" placeholder="bio"></div><button type="submit">Envoyer</button></form></body>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/register.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/register.vue"]]);
 }
 
 
@@ -3948,9 +4035,11 @@ const __modules__ = {
   "/@id/plugin-vue:export-helper": $id_bbb863c1,
   "/pages/index.vue?macro=true": $id_5dd70240,
   "/pages/login.vue?macro=true": $id_213baa8a,
+  "/pages/register.vue?macro=true": $id_222c4ecc,
   "/pages/fun.vue": $id_402fd3cd,
   "/pages/index.vue": $id_cca58e97,
   "/pages/login.vue": $id_b0922173,
+  "/pages/register.vue": $id_a0bf5dce,
   "/@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/router.options.mjs": $id_61ca2db8,
   "/@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/middleware.mjs": $id_cc624652,
   "/@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/root-component.mjs": $id_367f3b39,
