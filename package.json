@@ -4,7 +4,10 @@
   "description": "auth test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
   "keywords": [
     "server",
@@ -14,6 +17,10 @@
   ],
   "author": "abdou",
   "license": "ISC",
+  
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.3"
+  },
   "dependencies": {
     "async": "^3.2.3",
     "bcrypt": "^5.0.1",
