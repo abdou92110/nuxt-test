@@ -2871,52 +2871,31 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // Parents: 
 // - /@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/routes.mjs ($id_d1f819f2)
 // Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_213baa8a = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_b_button = __vite_ssr_import_0__.resolveComponent("b-button")
-
-  _push(`<div${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ id: "formContent" }, _attrs))
-  }><!-- Tabs Titles --><!-- Login Form --><form><input type="text" id="name" class="fadeIn second" name="name" placeholder="Identifiant"><input type="password" id="password" class="fadeIn third" name="password" placeholder="Mot de passe"><div class="row" style="${
-    __vite_ssr_import_1__.ssrRenderStyle({"margin-top":"5px"})
-  }">`)
-  _push(__vite_ssr_import_1__.ssrRenderComponent(_component_b_button, { pill: "" }, {
-    default: __vite_ssr_import_0__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(`Se connecter`)
-      } else {
-        return [
-          __vite_ssr_import_0__.createTextVNode("Se connecter")
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`<input type="button" value="Se déconnecter"></div></form><div></div>    <!-- Remind Passowrd --><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></div>`)
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></body>`)
 }
 
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -2995,52 +2974,31 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_m
 // Parents: 
 // - /@id/virtual:nuxt:C:/Users/abdou/test-auth/.nuxt/routes.mjs ($id_d1f819f2)
 // Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
 // --------------------
 const $id_b0922173 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_b_button = __vite_ssr_import_0__.resolveComponent("b-button")
-
-  _push(`<div${
-    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ id: "formContent" }, _attrs))
-  }><!-- Tabs Titles --><!-- Login Form --><form><input type="text" id="name" class="fadeIn second" name="name" placeholder="Identifiant"><input type="password" id="password" class="fadeIn third" name="password" placeholder="Mot de passe"><div class="row" style="${
-    __vite_ssr_import_1__.ssrRenderStyle({"margin-top":"5px"})
-  }">`)
-  _push(__vite_ssr_import_1__.ssrRenderComponent(_component_b_button, { pill: "" }, {
-    default: __vite_ssr_import_0__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(`Se connecter`)
-      } else {
-        return [
-          __vite_ssr_import_0__.createTextVNode("Se connecter")
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`<input type="button" value="Se déconnecter"></div></form><div></div>    <!-- Remind Passowrd --><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></div>`)
+  _push(`<body${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><form action="http://localhost:8080/api/users/login" method="POST"><div><label for="email">Email</label><input type="text" id="email" name="email" placeholder="Identifiant"></div><div><label for="password">Password</label><input type="password" id="password" name="password" placeholder="Mot de passe"></div><button type="submit">Envoyer</button></form><div><a class="underlineHover" href="#">Mot de passe oublier</a></div></body>`)
 }
 
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/login.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"C:/Users/abdou/test-auth/pages/login.vue"]]);
 }
 
 
